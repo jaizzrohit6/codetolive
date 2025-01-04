@@ -1,2 +1,2 @@
 # codetolive
-weekely code 
+weekely code push in javascript

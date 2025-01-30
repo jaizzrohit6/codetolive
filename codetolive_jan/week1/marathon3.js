@@ -1,5 +1,4 @@
 function convertToTime(time){
-
     const parts = time.split(":")
     let hours = parseInt(parts[0],10)
     const minutes = parts[1]

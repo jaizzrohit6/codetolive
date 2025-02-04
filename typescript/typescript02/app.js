@@ -40,22 +40,34 @@
 // enum ROLE {
 //     ADMIN,READ_ONLY,AUTHOR
 // } 
-var ROLE;
-(function (ROLE) {
-    ROLE[ROLE["ADMIN"] = 5] = "ADMIN";
-    ROLE[ROLE["READ_ONLY"] = 6] = "READ_ONLY";
-    ROLE[ROLE["AUTHOR"] = 7] = "AUTHOR";
-})(ROLE || (ROLE = {}));
+// enum ROLE {
+//     ADMIN =5,READ_ONLY,AUTHOR
+// } 
 // const ADMIN =0 
 // const AUTHOR = 1
 // const READ_ONLY = 2
-var person = {
-    name: 'Rohit',
-    age: 30,
-    hobbies: ['Sports', 'Cooking'],
-    role: ROLE.ADMIN
-};
-if (person.role === ROLE.ADMIN) {
-    console.log('is admin');
+// const person = {
+//     name: 'Rohit',
+//     age:30,
+//     hobbies: ['Sports','Cooking'],
+//     role: ROLE.ADMIN
+// }
+// if(person.role === ROLE.ADMIN){
+//     console.log('is admin')
+// }
+// console.log(person)
+//=======================================================
+function combine(input1, input2) {
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        return result = input1 + input2;
+    }
+    // else{
+    //     result = input1.toString() + input2.toString()
+    // }
+    //return result
 }
-console.log(person);
+var combineAges = combine(20, 30);
+var combinbedNames = combine('Rohit', 'Jaiswal');
+console.log(combineAges);
+console.log(combinbedNames);

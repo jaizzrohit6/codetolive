@@ -55,16 +55,24 @@
 */
 
 let arr = [1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]
-let returnuniqueElements = (arr) =>{
-    //time complexity: O(n^2)
-    //space complexity: O(n)
-    let uniqueElements = []
-    for(let i = 0;i< arr.length;i++){
-        if(!uniqueElements.includes(arr[i])){{
-            uniqueElements.push(arr[i])
-        }}
-    }
-    return uniqueElements
-}
-console.log(returnuniqueElements(arr))
+//==================Brute Force Approach Solution==================
+// let returnuniqueElements = (arr) =>{
+//     //time complexity: O(n^2)
+//     //space complexity: O(n)
+//     let uniqueElements = []
+//     for(let i = 0;i< arr.length;i++){
+//         if(!uniqueElements.includes(arr[i])){{
+//             uniqueElements.push(arr[i])
+//         }}
+//     }
+//     return uniqueElements
+// }
+// console.log(returnuniqueElements(arr))
 
+
+//==================Optimal Solution==================
+// let returnuniqueElements = (arr) =>{
+//     let set = new Set(arr)
+//     return Array.from(set)
+// }
+// console.log(returnuniqueElements(arr))
